@@ -12,7 +12,7 @@ Fgauche.addEventListener("click",decaleGauche)
 
 function decaleDroite() {
     position+=1
-    photo.style.transform="translateX(calc(" + position + "* -500px))";
+    photo.style.transform="translateX(calc(" + position + "* -600px))";
     if (position > maxPosition) {
         retourdebut()
     }
@@ -21,7 +21,7 @@ function decaleDroite() {
 
 function decaleGauche() {
     position-=1
-    photo.style.transform="translateX(calc(" + position + "* -px))";
+    photo.style.transform="translateX(calc(" + position + "* -600px))";
     if (position < minPosition) {
         retourfin()
     }
@@ -31,19 +31,18 @@ function decaleGauche() {
 
 
 function retourfin() {
-    position=maxPosition
+    position=maxPosition+1
     photo.classList.add("no-anime")
     decaleGauche()
 }
 
 function retourdebut() {
-    position=minPosition
+    position=minPosition-1
     photo.classList.add("no-anime")
     decaleDroite()
 }
 
 
-decaleDroite()
 
 
 
