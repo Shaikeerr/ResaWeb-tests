@@ -1,0 +1,79 @@
+body {
+    overflow-x: hidden;
+    background-color: rgb(40, 40, 40);
+  }
+
+.box {
+    border-radius: 10px;
+    width: 400px;
+    height: 350px;
+    background-color: white;  
+    margin: 0;
+  }
+
+.box img:not(.Rubis) {
+    width: 400px;
+    height: 200px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+  
+  .box h2 {
+    position: relative;
+    top: -44%;
+    margin: 0;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .box p {
+    position: relative;
+    top: -47%;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    color: gray;
+  }
+  
+  .Prix {
+    position: relative;
+    top: 5%;
+    left: 70%;
+    font-family: Hylia;
+  }
+  
+  .Rubis {
+    position: relative;
+    top: -15%;
+    left: 87%;
+      max-width: 30px;
+  }
+  
+  .Bouton {
+    position: relative;
+    top: -2%;
+    left: 52.5%;
+    background-color: darkgreen;
+    color: white;
+    font-size: 1.25rem ;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+  }
+
+.container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-left: 190px;
+}
+
+div > div {
+  padding: 10px;
+
+}
+  
